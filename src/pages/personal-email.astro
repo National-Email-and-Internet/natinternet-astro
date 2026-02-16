@@ -1,0 +1,247 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<style>
+  .domain-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .domain-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+  }
+</style>
+
+<BaseLayout>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-navy-800 to-navy-900 text-white py-24 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm uppercase tracking-widest text-teal-400 mb-6 font-semibold">Personal Email Accounts</p>
+      <h1 class="font-['Playfair_Display'] text-5xl md:text-6xl font-bold mb-6 leading-tight">
+        Your Email, Your <span class="italic text-teal-400">Identity</span>
+      </h1>
+      <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+        Professional-grade email hosting for personal use. Choose a domain that reflects who you are and where you're from.
+      </p>
+      <a href="#domains" class="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-600 px-8 py-4 rounded-lg font-semibold transition shadow-lg shadow-teal-500/30">
+        Choose Your Domain
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- What Makes It Different -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-['Playfair_Display'] text-4xl font-bold text-slate-900 mb-6">
+          Business-Grade Email, <span class="italic text-teal-600">Personal Use</span>
+        </h2>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          The same secure, reliable, ad-free platform we provide to businesses — now available for your personal email.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-teal-100 rounded-xl mb-4 flex items-center justify-center mx-auto">
+            <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-slate-900">Secure & Private</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Your personal email is encrypted, protected from spam, and never scanned for advertising. Your privacy matters here.</p>
+        </div>
+
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-blue-100 rounded-xl mb-4 flex items-center justify-center mx-auto">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-slate-900">Ad-Free Experience</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">No ads, no tracking, no data harvesting. Just clean, professional email that works the way you expect.</p>
+        </div>
+
+        <div class="text-center p-6">
+          <div class="w-16 h-16 bg-purple-100 rounded-xl mb-4 flex items-center justify-center mx-auto">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-slate-900">Unique Identity</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Stand out with a memorable address. Be you@saltspring.com or you@gulfislands.com — not another generic gmail.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Domains -->
+  <section id="domains" class="py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-['Playfair_Display'] text-4xl font-bold text-slate-900 mb-6">
+          Choose Your <span class="italic text-teal-600">Domain</span>
+        </h2>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          Select a domain that represents you. Each one includes the same business-grade features and support.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Salt Spring Island -->
+        <div class="domain-card bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+              </svg>
+            </div>
+            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-slate-900">saltspring.com</h3>
+          </div>
+          <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+            For residents and lovers of Salt Spring Island, BC. Perfect for islanders at heart.
+          </p>
+          <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="text-teal-600 font-semibold text-sm hover:underline">
+            Get yourname@saltspring.com →
+          </a>
+        </div>
+
+        <!-- Gulf Islands -->
+        <div class="domain-card bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+              </svg>
+            </div>
+            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-slate-900">gulfislands.com</h3>
+          </div>
+          <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+            Celebrate the beautiful Gulf Islands archipelago. For those who call these islands home.
+          </p>
+          <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="text-blue-600 font-semibold text-sm hover:underline">
+            Get yourname@gulfislands.com →
+          </a>
+        </div>
+
+        <!-- Quixnet -->
+        <div class="domain-card bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-purple-500 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-slate-900">quixnet.net</h3>
+          </div>
+          <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+            A classic internet domain with history. Short, memorable, and distinctive.
+          </p>
+          <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="text-purple-600 font-semibold text-sm hover:underline">
+            Get yourname@quixnet.net →
+          </a>
+        </div>
+
+        <!-- Pacificnet -->
+        <div class="domain-card bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-cyan-500 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+              </svg>
+            </div>
+            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-slate-900">pacificnet.net</h3>
+          </div>
+          <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+            For those connected to the Pacific region. Clean, professional, and geographic.
+          </p>
+          <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="text-cyan-600 font-semibold text-sm hover:underline">
+            Get yourname@pacificnet.net →
+          </a>
+        </div>
+
+        <!-- More Coming -->
+        <div class="domain-card bg-white rounded-xl p-8 shadow-sm border border-gray-200 border-dashed">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center">
+              <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+              </svg>
+            </div>
+            <h3 class="font-['Playfair_Display'] text-xl font-semibold text-gray-400">More Domains</h3>
+          </div>
+          <p class="text-slate-500 text-sm mb-4 leading-relaxed">
+            We're always adding new domain options. Contact us if you have a specific request.
+          </p>
+          <a href="/contact-us/" class="text-gray-500 font-semibold text-sm hover:underline">
+            Contact us →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-['Playfair_Display'] text-4xl font-bold text-slate-900 mb-6">
+          Everything You <span class="italic text-teal-600">Need</span>
+        </h2>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          The same features businesses rely on, scaled for your personal use.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-x-12 gap-y-6 max-w-3xl mx-auto">
+        <div class="flex items-start gap-3">
+          <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+          <span class="text-slate-700">5GB to 100GB mailbox options</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+          <span class="text-slate-700">Advanced spam & virus protection</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+          <span class="text-slate-700">Webmail, IMAP, POP3, SMTP access</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+          <span class="text-slate-700">Mobile device sync</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+          <span class="text-slate-700">Email forwarding & auto-reply</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+          <span class="text-slate-700">24/7 expert support</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 bg-gradient-to-r from-navy-800 to-navy-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl text-white mb-6">
+        Ready for a Better <span class="italic text-teal-400">Personal Email</span>?
+      </h2>
+      <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+        Ditch the ads and tracking. Get secure, reliable email with a domain that's uniquely you.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="bg-teal-500 hover:bg-teal-600 px-10 py-5 rounded-lg font-semibold transition shadow-lg shadow-teal-500/30 text-lg">
+          Get Your Personal Email
+        </a>
+        <a href="/contact-us/" class="border-2 border-white/30 hover:border-white/60 px-10 py-5 rounded-lg font-semibold transition text-lg text-white">
+          Questions? Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
