@@ -1,0 +1,61 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'NEIC - Secure Email & Web Hosting', description = 'National Email and Internet Corp - Safe, secure, robust email and web hosting for your business.' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <title>{title}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+  <nav class="bg-navy-900 text-white py-4 px-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="/" class="text-xl font-bold">NEIC</a>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="/" class="hover:text-teal-500 transition">Home</a>
+        <a href="https://help.natinternet.com" class="hover:text-teal-500 transition">Support</a>
+        <a href="https://webmail.natinternet.com" class="hover:text-teal-500 transition">Webmail</a>
+        <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">My Account</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <slot />
+  </main>
+  <footer class="bg-navy-950 text-gray-300 py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white font-bold mb-4">National Email and Internet Corp</h3>
+        <p class="text-sm">Secure email and web hosting for your business since 1996.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Contact</h4>
+        <p class="text-sm">+1 (866) 667-9277</p>
+        <p class="text-sm">support@natinternet.com</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+        <ul class="text-sm space-y-2">
+          <li><a href="/terms-of-service/" class="hover:text-white transition">Terms of Service</a></li>
+          <li><a href="/privacy-policy-for-national-email-and-internet-corp/" class="hover:text-white transition">Privacy Policy</a></li>
+          <li><a href="/cancellation-policy/" class="hover:text-white transition">Cancellation Policy</a></li>
+          <li><a href="/contact-us/" class="hover:text-white transition">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-800 text-sm text-center">
+      © {new Date().getFullYear()} National Email and Internet Corp. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
