@@ -39,16 +39,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   
   /* Card hover */
   .service-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .service-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
   }
 </style>
 
 <BaseLayout>
-  <!-- Full-height Hero with 20 floating envelopes -->
+  <!-- Hero with floating envelopes -->
   <section class="relative h-[85vh] bg-gradient-to-b from-navy-800 to-navy-900 text-white py-24 px-6 overflow-hidden flex items-center justify-center">
     <!-- Floating envelopes (20 total) -->
     <svg class="envelope w-8 h-8 text-teal-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -73,66 +73,222 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <svg class="envelope w-10 h-10 text-teal-300" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
     
     <div class="relative max-w-4xl mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6">Secure Email & Web Hosting for Your Business</h1>
-      <p class="text-xl text-gray-300 mb-8">Host your business email on a secure, encrypted, privacy-guaranteed, and ad-free service.</p>
+      <p class="text-sm uppercase tracking-widest text-teal-400 mb-6 font-semibold">Secure Business Email Since 1996</p>
+      <h1 class="font-['Playfair_Display'] text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        Email Hosting You Can <span class="italic text-teal-400">Trust</span>
+      </h1>
+      <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+        Professional, encrypted, ad-free email for your business. No compromises on privacy, security, or reliability.
+      </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition shadow-lg shadow-blue-600/30">Get Started</a>
-        <a href="/contact-us/" class="border border-white/30 hover:border-white/60 px-8 py-4 rounded-lg font-semibold transition">Contact Us</a>
+        <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="bg-teal-500 hover:bg-teal-600 px-10 py-4 rounded-lg font-semibold transition shadow-lg shadow-teal-500/30 text-lg">
+          Get Started
+        </a>
+        <a href="/contact-us/" class="border-2 border-white/30 hover:border-white/60 px-10 py-4 rounded-lg font-semibold transition text-lg">
+          Contact Us
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Services with Lucide-style icons -->
-  <section class="py-20 px-6 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-12">Why Choose NEIC?</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="service-card bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-          <div class="w-12 h-12 bg-teal-500/10 border border-teal-500/30 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-          </div>
-          <h3 class="text-xl font-bold mb-2">Spam & Virus Protection</h3>
-          <p class="text-gray-600">Protection against spam and viruses with robust email filtering.</p>
+  <!-- Stats Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12 text-center">
+        <div>
+          <div class="font-['Playfair_Display'] text-5xl md:text-6xl text-teal-600 mb-2">28+</div>
+          <div class="text-xs uppercase tracking-widest text-gray-400 font-semibold">Years in Business</div>
         </div>
-        <div class="service-card bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-          <div class="w-12 h-12 bg-teal-500/10 border border-teal-500/30 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <h3 class="text-xl font-bold mb-2">Affordable</h3>
-          <p class="text-gray-600">Mailbox sizes ranging from 5GB to 100GB to meet your needs.</p>
+        <div>
+          <div class="font-['Playfair_Display'] text-5xl md:text-6xl text-teal-600 mb-2">99.9%</div>
+          <div class="text-xs uppercase tracking-widest text-gray-400 font-semibold">Uptime Guarantee</div>
         </div>
-        <div class="service-card bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-          <div class="w-12 h-12 bg-teal-500/10 border border-teal-500/30 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-          </div>
-          <h3 class="text-xl font-bold mb-2">Support Champions</h3>
-          <p class="text-gray-600">Our email experts are always ready to help you when you need it.</p>
+        <div>
+          <div class="font-['Playfair_Display'] text-5xl md:text-6xl text-teal-600 mb-2">1M+</div>
+          <div class="text-xs uppercase tracking-widest text-gray-400 font-semibold">Emails Protected Daily</div>
+        </div>
+        <div>
+          <div class="font-['Playfair_Display'] text-5xl md:text-6xl text-teal-600 mb-2">99.7%</div>
+          <div class="text-xs uppercase tracking-widest text-gray-400 font-semibold">Spam Blocked</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features section -->
-  <section class="py-20 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Professional Email You Can Make Your Own</h2>
-      <div class="grid md:grid-cols-2 gap-6 text-left">
-        <div class="service-card p-6 bg-gray-50 rounded-xl">
-          <h3 class="font-bold mb-2">Personalize Your Email</h3>
-          <p class="text-gray-600 text-sm">Create your signature using HTML or plain text, and update your display name or organization.</p>
+  <!-- Services Section -->
+  <section class="py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          Complete <span class="italic text-teal-600">Hosting</span> Solutions
+        </h2>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          From professional email to reliable web hosting, we provide everything your business needs to stay connected and secure.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <!-- Business Email Hosting -->
+        <div class="service-card bg-white rounded-2xl p-10 shadow-sm border border-gray-200">
+          <div class="w-16 h-16 bg-teal-500 rounded-xl mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-['Playfair_Display'] text-3xl text-slate-900 mb-4 font-semibold">Business Email Hosting</h3>
+          <p class="text-slate-600 mb-6 leading-relaxed">
+            Professional email hosting with your own domain. Secure, reliable, and ad-free communication that reflects your brand's professionalism.
+          </p>
+          
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">5GB to 100GB mailbox options</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">Advanced spam & virus protection</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">Webmail, IMAP, POP3, and SMTP access</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">Email aliases and forwarding</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">24/7 expert support</span>
+            </li>
+          </ul>
+          
+          <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="inline-flex items-center gap-2 text-teal-600 font-semibold hover:gap-3 transition-all">
+            Get Email Hosting
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
         </div>
-        <div class="service-card p-6 bg-gray-50 rounded-xl">
-          <h3 class="font-bold mb-2">Find Any Email With Ease</h3>
-          <p class="text-gray-600 text-sm">Search your mailbox and narrow down results using intuitive filters.</p>
+
+        <!-- Web Hosting -->
+        <div class="service-card bg-white rounded-2xl p-10 shadow-sm border border-gray-200">
+          <div class="w-16 h-16 bg-blue-600 rounded-xl mb-6 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+            </svg>
+          </div>
+          <h3 class="font-['Playfair_Display'] text-3xl text-slate-900 mb-4 font-semibold">Web Hosting</h3>
+          <p class="text-slate-600 mb-6 leading-relaxed">
+            Fast, reliable web hosting for your business website. Built on robust infrastructure with the security and uptime your business demands.
+          </p>
+          
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">SSD storage for faster performance</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">Free SSL certificates</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">Daily automated backups</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">PHP & MySQL support</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+              <span class="text-slate-600">cPanel control panel</span>
+            </li>
+          </ul>
+          
+          <a href="/contact-us/" class="inline-flex items-center gap-2 text-blue-600 font-semibold hover:gap-3 transition-all">
+            Learn About Web Hosting
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
         </div>
-        <div class="service-card p-6 bg-gray-50 rounded-xl">
-          <h3 class="font-bold mb-2">Intuitive Composer</h3>
-          <p class="text-gray-600 text-sm">Wide selection of formatting options, drag and drop images, add links and check spelling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          Professional Email, <span class="italic text-teal-600">Personalized</span>
+        </h2>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          Every feature you need for professional business communication, without the complexity.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-teal-100 rounded-xl mb-4 flex items-center justify-center mx-auto">
+            <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-slate-900">Personalize Your Email</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Create custom signatures using HTML or plain text. Update your display name and organization details easily.</p>
         </div>
-        <div class="service-card p-6 bg-gray-50 rounded-xl">
-          <h3 class="font-bold mb-2">Contacts & File Sharing</h3>
-          <p class="text-gray-600 text-sm">Complete directory of contacts, personal details, notes, and easy file sharing.</p>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-xl mb-4 flex items-center justify-center mx-auto">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-slate-900">Powerful Search</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Find any email instantly with advanced search filters. Narrow results by date, sender, attachments, and more.</p>
         </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-xl mb-4 flex items-center justify-center mx-auto">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-slate-900">Rich Composer</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Format messages with ease. Drag and drop images, add links, check spelling, and create professional emails.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-xl mb-4 flex items-center justify-center mx-auto">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-lg mb-2 text-slate-900">Contacts & Sharing</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Complete contact directory with personal details and notes. Share files and collaborate seamlessly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bold CTA Section -->
+  <section class="py-24 bg-gradient-to-r from-navy-800 to-navy-900">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="font-['Playfair_Display'] text-4xl md:text-5xl text-white mb-6">
+        Ready to Upgrade Your <span class="italic text-teal-400">Business Email</span>?
+      </h2>
+      <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+        Join thousands of businesses who trust NEIC for secure, reliable, professional email hosting.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="http://billing.stripe.com/p/login/eVa9B41Dc2zR1Fe8ww" class="bg-teal-500 hover:bg-teal-600 px-10 py-5 rounded-lg font-semibold transition shadow-lg shadow-teal-500/30 text-lg">
+          Get Started Today
+        </a>
+        <a href="/contact-us/" class="border-2 border-white/30 hover:border-white/60 px-10 py-5 rounded-lg font-semibold transition text-lg text-white">
+          Talk to an Expert
+        </a>
       </div>
     </div>
   </section>
