@@ -3,37 +3,90 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Privacy Policy - NEIC">
+  <div class="bg-gray-50 py-12 border-b border-gray-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="inline-flex items-center gap-2 mb-4 px-3 py-1 bg-green-50 text-green-700 rounded-full border border-green-100">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <span class="text-xs font-bold uppercase tracking-widest">Enhanced Privacy Shield</span>
+      </div>
+      <h1 class="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
+      <p class="text-gray-500 uppercase tracking-widest text-[10px] font-black">Secure Data Processing Protocol — v2.0</p>
+    </div>
+  </div>
+
   <section class="py-20 px-6">
-    <div class="max-w-4xl mx-auto prose prose-lg">
-      <h1>Privacy Policy</h1>
-      
-      <p>At National Email and Internet, accessible from www.natinternet.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by National Email and Internet and how we use it.</p>
-      
-      <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
-      
-      <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in National Email and Internet. This policy is not applicable to any information collected offline or via channels other than this website.</p>
-      
-      <h2>Consent</h2>
-      <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
-      
-      <h2>Information We Collect</h2>
-      <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
-      
-      <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
-      
-      <h2>How We Use Your Information</h2>
-      <p>We use the information we collect in various ways, including to:</p>
-      <ul>
-        <li>Provide, operate, and maintain our website</li>
-        <li>Improve, personalize, and expand our website</li>
-        <li>Understand and analyze how you use our website</li>
-        <li>Develop new products, services, features, and functionality</li>
-        <li>Communicate with you to provide updates and other information</li>
-        <li>Find and prevent fraud</li>
-      </ul>
-      
-      <h2>Contact Us</h2>
-      <p>For questions about this Privacy Policy, please contact us at <a href="mailto:support@natinternet.com">support@natinternet.com</a>.</p>
+    <div class="max-w-3xl mx-auto">
+      <div class="prose prose-lg prose-ocean max-w-none">
+        
+        <div class="shadow-sm border border-gray-100 rounded-3xl overflow-hidden mb-16">
+          <div class="bg-ocean-900 p-8 text-white">
+            <h2 class="text-white mt-0 font-['Playfair_Display'] border-0">Our Core Protocol</h2>
+            <p class="text-ocean-100 opacity-90 leading-relaxed mb-0">At National Email and Internet, reachable from <a href="https://www.natinternet.com" class="text-white font-bold underline decoration-white/30 hover:decoration-white">www.natinternet.com</a>, our absolute priority is the privacy of our visitors and clients. This document details the types of data we record and exactly how we protect it.</p>
+          </div>
+          <div class="bg-white p-8 italic text-gray-600 text-sm">
+            <p class="mb-0">This Privacy Policy applies only to our online activities and is valid for visitors to our website. It is not applicable to any information collected offline or via channels other than this website.</p>
+          </div>
+        </div>
+        
+        <h2 class="font-['Playfair_Display'] text-3xl font-bold text-ocean-900 flex items-center gap-3">
+          <span class="w-8 h-8 bg-ocean-100 rounded-lg flex items-center justify-center text-ocean-600 text-sm">01</span>
+          System Consent
+        </h2>
+        <div class="pl-11">
+          <p>By using our website and services, you hereby consent to our strict Privacy Policy and agree to its operational terms.</p>
+        </div>
+        
+        <h2 class="font-['Playfair_Display'] text-3xl font-bold text-ocean-900 mt-16 flex items-center gap-3">
+          <span class="w-8 h-8 bg-ocean-100 rounded-lg flex items-center justify-center text-ocean-600 text-sm">02</span>
+          Data Collection Audit
+        </h2>
+        <div class="pl-11">
+          <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point of collection.</p>
+          
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 mt-6">
+            <h4 class="font-bold text-gray-800 uppercase tracking-tighter mb-4 text-xs">Primary Collection Points:</h4>
+            <ul class="text-sm text-gray-500 space-y-2 mb-0">
+              <li><strong class="text-gray-700">Direct Communication:</strong> Name, email, phone, and message contents.</li>
+              <li><strong class="text-gray-700">Service Provisioning:</strong> Credentials required for secure island email routing.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h2 class="font-['Playfair_Display'] text-3xl font-bold text-ocean-900 mt-16 flex items-center gap-3">
+          <span class="w-8 h-8 bg-ocean-100 rounded-lg flex items-center justify-center text-ocean-600 text-sm">03</span>
+          Operational Usage
+        </h2>
+        <div class="pl-11">
+          <p>We use the information we collect in various ways, strictly for maintaining the integrity of the NEIC network:</p>
+          <div class="grid sm:grid-cols-2 gap-4 not-prose mt-6">
+            <div class="bg-ocean-50 p-4 rounded-xl border border-ocean-100 hover:border-ocean-300 transition">
+              <p class="font-bold text-ocean-900 text-sm mb-1">Infrastructure</p>
+              <p class="text-ocean-700 text-xs leading-relaxed">Provide, operate, and maintain internal network systems.</p>
+            </div>
+            <div class="bg-ocean-50 p-4 rounded-xl border border-ocean-100 hover:border-ocean-300 transition">
+              <p class="font-bold text-ocean-900 text-sm mb-1">Innovation</p>
+              <p class="text-ocean-700 text-xs leading-relaxed">Develop new secure products, services, and island features.</p>
+            </div>
+            <div class="bg-ocean-50 p-4 rounded-xl border border-ocean-100 hover:border-ocean-300 transition">
+              <p class="font-bold text-ocean-900 text-sm mb-1">Integrity</p>
+              <p class="text-ocean-700 text-xs leading-relaxed">Detect and prevent fraudulent activities across our fleet.</p>
+            </div>
+            <div class="bg-ocean-50 p-4 rounded-xl border border-ocean-100 hover:border-ocean-300 transition">
+              <p class="font-bold text-ocean-900 text-sm mb-1">Outreach</p>
+              <p class="text-ocean-700 text-xs leading-relaxed">Communicate critical security updates and system alerts.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-24 pt-12 border-t border-gray-200 text-center">
+          <p class="text-gray-400 text-xs mb-8 italic">National Email and Internet Corp — Data Protection Office</p>
+          <a href="mailto:support@natinternet.com" class="inline-flex items-center gap-3 bg-ocean-100 text-ocean-600 px-8 py-3 rounded-full font-bold hover:bg-ocean-200 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Contact Privacy Liaison
+          </a>
+        </div>
+
+      </div>
     </div>
   </section>
 </BaseLayout>
